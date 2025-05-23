@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="module" src="./js/showMoreInformation.js"></script>
+</head>
+
+<body class="dark">
+    <header>
+        <div class="container">
+            <h3 class="heading">Where in the world?</h3>
+            <div class="change-mode light-mode">
+                <i class="fa-solid fa-sun"></i>
+                <p class="dark-light-text">Light Mode</p>
+            </div>
+            <div class="change-mode dark-mode">
+                <i class="fa-solid fa-moon"></i>
+                <p class="dark-light-text">Dark Mode</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container country-con">
+        <a href="index.html">
+            <button class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i> 
+                <p class="back-btn-para">Back</p>
+            </button>
+        </a>
+
+        <div class="content">
+            <div class="country-image-div">
+                <img src="" class="country-flag">
+            </div>
+
+            <div class="info">
+                <h2 class="country-name"></h2>
+                <div class="details">
+
+                    <div class="left">
+                        <p>Native Name: <span class="span native-name"></span></p>
+                        <p>Population: <span class="span population"></span></p>
+                        <p>Region: <span class="span region"></span></p>
+                        <p>Sub Region: <span class="span subregion"></span></p>
+                        <p>Capital: <span class="span capital"></span></p>
+                    </div>
+
+                    <div class="right">
+                        <p>Top Level Domain: <span class="span country-domain"></span></p>
+                        <p>Currencies: <span class="span country-currencies"></span></p>
+                        <p>Languages: <span class="span country-languages"></span></p>
+                    </div>
+
+                </div>
+
+                <div class="border-countries-div">
+                    <p class="border-countries-para">Border Countries: </p>
+                </div>
+            </div>   
+        </div>
+    </main>
+</body>
+
+</html>

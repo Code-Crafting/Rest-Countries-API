@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="module" src="./js/script.js"></script>
+</head>
+
+<body class="dark">
+    <header>
+        <div class="container">
+            <h3 class="heading">Where in the world?</h3>
+            <div class="change-mode light-mode">
+                <i class="fa-solid fa-sun"></i>
+                <p class="dark-light-text">Light Mode</p>
+            </div>
+            <div class="change-mode dark-mode">
+                <i class="fa-solid fa-moon"></i>
+                <p class="dark-light-text">Dark Mode</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="sub-heading">
+        <div class="search">
+            <label for="search-area">
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            </label>
+            <input type="text" placeholder="Search for a country..." id="search-area">
+        </div>
+
+
+        <div class="custom-dropdown">
+            <button class="dropdown-trigger">
+                <p class="dropdown-trigger-para">Filter by Region</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-options">
+                <li>Africa</li>
+                <li>America</li>
+                <li>Asia</li>
+                <li>Europe</li>
+                <li>Oceania</li>
+                <li>All</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="all-countries container">
+    </div>
+
+
+</body>
+
+</html>

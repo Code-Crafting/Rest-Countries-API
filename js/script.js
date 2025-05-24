@@ -28,7 +28,7 @@ const setInnerHtml = (d) => {
 
                 <div class="country-details">
                     <h3 class="country-name">${name.common}</h3>
-                    <p><b>Population:</b><span class="population">${population.toLocaleString("en-IN")}</span></p>
+                    <p><b>Population:</b><span class="population">${population.toLocaleString("en-US")}</span></p>
                     <p><b>Region:</b><span class="region">${region}</span></p>
                     <p><b>Capital:</b><span class="capital">${capital ? capital : "N/A"}</span></p>
                 </div>

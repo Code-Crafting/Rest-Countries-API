@@ -41,7 +41,6 @@ body.light {
     & header {
         background-color: white;
         color: black;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
 
     & .search {
@@ -125,6 +124,10 @@ body.light {
             color: var(--grey-light-mode-ext);
             border-color: white;
         }
+
+        & p {
+            color: var(--grey-light-mode-ext);
+        }
     }
 
     & .content {
@@ -141,6 +144,7 @@ body.light {
 header {
     background-color: var(--blue-dark-mode-elements);
     color: var(--white-dark-mode-text-light-mode-elements);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .light-mode,
@@ -523,7 +527,7 @@ header {
 
     }
 
-    .country-div:hover{
+    .country-div:hover {
         transform: none;
     }
 }

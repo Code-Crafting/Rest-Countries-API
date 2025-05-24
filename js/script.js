@@ -1,18 +1,19 @@
 import { changeMode } from "./changeMode.js";
 
 const allCountriesDiv = document.querySelector(".all-countries");
-const countryTemplate = document.querySelector(".country-template");
 const input = document.querySelector("#search-area");
-const selectDiv = document.querySelector("#filter");
-
 
 let allCountriesData = [];
 
-
-
 const setInnerHtml = (d) => {
     allCountriesDiv.innerHTML = "";
+
+    d.sort((a, b) =>{
+        return a.name.common.localeCompare(b.name.common);
+    })
+
     d.forEach((el) => {
+
         const { name, population, region, capital, numericCode, flags } = el;
 
         const ancher = document.createElement("a");
@@ -35,7 +36,6 @@ const setInnerHtml = (d) => {
         `
         allCountriesDiv.append(ancher);
     })
-
 }
 
 // dark-light-mode
@@ -46,7 +46,6 @@ async function getData() {
     const res = await fetch("https://restcountries.com/v3.1/all");
     const data = await res.json();
     allCountriesData = data;
-    console.log(data);
 
     setInnerHtml(data);
 }

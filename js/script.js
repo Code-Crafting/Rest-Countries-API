@@ -13,14 +13,15 @@ const setInnerHtml = (d) => {
     })
 
     d.forEach((el) => {
+        console.log(el);
 
-        const { name, population, region, capital, numericCode, flags } = el;
+        const { name, population, region, capital, cca3, flags } = el;
 
         const ancher = document.createElement("a");
         ancher.href = `country-info.html?name=${name.common}`;
 
         ancher.innerHTML = `
-            <div class="country-div" id="${numericCode}">
+            <div class="country-div" id="${cca3}">
                 <div class="country-image-div">
                     <img src="${flags.png}" alt="country image" class="country-image">
                 </div>

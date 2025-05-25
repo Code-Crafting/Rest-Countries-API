@@ -26,7 +26,7 @@ const setInnerHtml = (d) => {
     countryFlag.src = flags.png;
     countryName.innerText = name.common;
     nativeName.innerText = name.official;
-    countryPopulation.innerText = population.toLocaleString("en-IN");
+    countryPopulation.innerText = population.toLocaleString("en-US");
     countryRegion.innerText = region;
     countrySubRegion.innerText = subregion;
     countryCapital.innerText = capital ? capital : "N/A";
